@@ -7,7 +7,7 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    <form onsubmit="return validate();" action="https://www.youtube.com/"> <!--change action-->
+    <form id="myform" onsubmit="return validate();" action="#"> <!--change action-->
         <label for="DOB">Enter your birthday</label>
         <input id="birthday" placeholder="dd-mm-yyyy" type="text"/>
         <br>
@@ -21,5 +21,7 @@
         <br>
         <button type="submit">Submit</button>
     </form>
+    <br>
+    <p><span id="akanBirthday"></span></p>
 </body>
 </html>
