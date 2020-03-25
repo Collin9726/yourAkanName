@@ -25,7 +25,7 @@ function validate(){
     || parseInt(bday.trim().charAt(3))>=0 === false || parseInt(bday.trim().charAt(4))>=0 === false){
         return false;
     }
-    else if(dd>31 || dd<=0 || mm> 12 || mm<=0 || yyyy<1000 || yyyy>2020){
+    else if(dd>31 || dd<=0 || mm> 12 || mm<=0 || yyyy<=1900 || yyyy>2020){
         return false;
     }    
     else if (yyyy%4===0 && mm===02 && dd>29){
@@ -68,8 +68,27 @@ function validate(){
 function dayWeek(){ 
     var CC=parseInt(yyyy.toString().slice(0,2));
     var YY=parseInt(yyyy.toString().slice(2,4));
-    var MM=mm;
-    var DD=dd;
-    var dayOfWeek=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )% 7; 
-    document.getElementById("akanBirthday").innerHTML="Your Akan Birthday: "+bday.trim();
+    var MM=parseInt(mm);
+    var DD=parseInt(dd);
+    var YearCode=(YY+Math.trunc(YY/4))%7;
+    var month_codes=[0,3,3,6,1,4,6,2,5,0,3,5];
+    var MonthCode=month_codes[MM-1];
+    var CenturyCode;
+    if (CC===19){
+        CenturyCode=0;
+    }
+    else if(CC===20){
+        CenturyCode=6;
+    }
+    var LeapYearCode;
+    if (yyyy%4===0 && (MM===1 || MM===2)){
+        LeapYearCode=-1;
+    }
+    else{
+        LeapYearCode=0;
+    }
+    var dayOfWeek=(YearCode+MonthCode+CenturyCode+DD+LeapYearCode)%7;
+    var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var dayOfWeekName=days[dayOfWeek];    
+    document.getElementById("akanBirthday").innerHTML="Your were born on "+dayOfWeekName;
 }
