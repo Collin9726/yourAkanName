@@ -4,6 +4,7 @@ var radio2;
 var dd;
 var mm;
 var yyyy;
+var gender;
 
 function validate(){
     bday=document.getElementById("birthday").value;
@@ -49,14 +50,17 @@ function validate(){
 
     if (radio1.checked===true){
         //alert("Male chosen");
-        //alert(bday);        
+        //alert(bday); 
+        gender="Male";       
         document.getElementById("myform").reset();
         dayWeek();
         return true;
     }
     else if (radio2.checked===true){
-        alert("Female chosen");
+        //alert("Female chosen");
+        gender="Female";
         document.getElementById("myform").reset();
+        dayWeek();
         return true;
     }
     else{
@@ -89,6 +93,17 @@ function dayWeek(){
     }
     var dayOfWeek=(YearCode+MonthCode+CenturyCode+DD+LeapYearCode)%7;
     var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    var dayOfWeekName=days[dayOfWeek];    
-    document.getElementById("akanBirthday").innerHTML="Your were born on "+dayOfWeekName;
+    var dayOfWeekName=days[dayOfWeek];
+    var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];  
+    var akanName;
+    if(gender==="Male"){
+        akanName=maleNames[dayOfWeek];
+    } 
+    else if(gender==="Female"){
+        akanName=femaleNames[dayOfWeek];
+    }  
+    document.getElementById("yourBirthday").innerHTML="Your were born on "+dayOfWeekName.toUpperCase()+", "+bday.trim();
+    document.getElementById("yourGender").innerHTML="Your identify as "+gender.toUpperCase();
+    document.getElementById("yourAkan").innerHTML="Your Akan name is "+akanName.toUpperCase();
 }
