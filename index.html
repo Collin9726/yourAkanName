@@ -23,13 +23,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" name="culture">Culture</a>
+                        <a class="nav-link" href="#culture">Culture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" name="connect">Connect</a>
+                        <a class="nav-link" href="#connect">Connect</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" name="contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>                    
                 </ul>
             </div>
@@ -63,13 +63,13 @@
                         <input id="radio2" name="gender" type="radio" value="Female"/>
                         <label for="female">Female</label>
                         <br><br>
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-primary" type="submit"><a href="#jsOutput"></a>Submit</a></button>
                     </div>
                 </form>
                 <br>
                 <!--JS output-->
                 <p>
-                    <h5 id="yourBirthday"></h5>
+                    <h5 id="yourBirthday"><a name="jsOutput"></a></h5>
                     <h5 id="yourGender"></h5>
                     <h5 id="yourAkan"></h5>            
                 </p>
@@ -125,7 +125,7 @@
     <div class="container-fluid padding culture">
         <div class="row welcome text-center">
             <div class="col-12">
-                <h1 class="display-4">Akan Culture</h1>
+                <h1 class="display-4"><a name="culture">Akan Culture</a></h1>
             </div>
             <hr>
         </div>
@@ -160,6 +160,9 @@
                 </div>                  
             </div>            
         </div>
+    </div>
+    <div class="culture culturePad text-center">
+        <button class="btn btn-info btn-large" data-toggle="collapse" data-target="#cultureContent">Expand to Explore</button>
     </div>
 
     <div class="container-fluid padding culture culturePad">
@@ -217,7 +220,7 @@
     <div class="container-fluid padding">
         <div class="row text-center padding">
             <div class="col-12">
-                <h2>Akan Connect</h2>
+                <h2><a name="connect">Akan Connect</a></h2>
             </div>
             <div class="col-12 social padding">
                 <a href="#"><i class="fab fa-facebook"></i></a>
@@ -234,7 +237,7 @@
         <div class="container-fluid padding">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <h2 id="footr">CultureCompany</h2>
+                    <h2 id="footr"><a name="contact">CultureCompany</a></h2>
                     <hr class="light">
                     <p>444-333-777</p>
                     <p>culturecompany@gmail.com</p>
