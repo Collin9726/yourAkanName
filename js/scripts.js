@@ -103,7 +103,8 @@ function dayWeek(){
     else if(gender==="Female"){
         akanName=femaleNames[dayOfWeek];
     }  
-    document.getElementById("yourBirthday").innerHTML="Your were born on "+dayOfWeekName.toUpperCase()+", "+bday.trim();
-    document.getElementById("yourGender").innerHTML="Your identify as "+gender.toUpperCase();
-    document.getElementById("yourAkan").innerHTML="Your Akan name is "+akanName.toUpperCase();
+    document.getElementById("yourBirthday").innerHTML="You were born on "+dayOfWeekName.toUpperCase()+", "+bday.trim()+".";
+    document.getElementById("yourGender").innerHTML="You identify as "+gender.toUpperCase()+".";
+    document.getElementById("yourAkan").innerHTML="Your Akan name:";
+    document.getElementById("yourAkanNAME").innerHTML=akanName.toUpperCase();
 }

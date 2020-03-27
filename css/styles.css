@@ -128,6 +128,11 @@ footer{
   padding-top: 2em;
 }
 
+.culturePad1{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 hr.light{
   border-top: 1px solid #d5d5d5;
   width: 75%;
