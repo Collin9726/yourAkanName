@@ -109,33 +109,51 @@
     </div>
 
     <!--input form-->
-    <form id="myform" onsubmit="return validate();" action="#"> <!--change action-->
-        <label for="DOB">Enter your birthday</label>
-        <input id="birthday" placeholder="dd-mm-yyyy" type="text"/>
-        <br>
-        Click on your gender 
-        <br>        
-        <input id="radio1" name="gender" type="radio" value="Male"/>
-        <label for="male">Male</label>
-        <br>        
-        <input id="radio2" name="gender" type="radio" value="Female"/>
-        <label for="female">Female</label>
-        <br>
-        <button type="submit">Submit</button>
-    </form>
-    <br>
-
-    <!--JS output-->
-    <p>
-        <span id="yourBirthday"></span><br>
-        <span id="yourGender"></span><br>
-        <span id="yourAkan"></span>            
-    </p>
-
-    <!--history section-->
     <div class="container-fluid padding">
         <div class="row padding">
-            <div class="col-md-12 col-lg-6">
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-4 col-sm-12 welcome text-center">
+                <h1 class="display-4">Akan Naming Tradition</h1>
+                <hr>            
+                <p class="lead">Akan names are derived from Ghanian culture. Frequently in Ghana, children 
+                    are given their first name as a 'day name' which corresponds to the day of the week they were born. 
+                    Know your Akan name today!</p>
+            </div>
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-6 col-sm-12">
+                <form id="myform" onsubmit="return validate();" action="#"> <!--change action-->
+                    <div class="form-group">
+                        <label for="DOB">Enter your birthday</label>
+                        <input id="birthday" class="form-control" placeholder="dd-mm-yyyy" type="text"/>
+                        <br>
+                        Click on your gender 
+                        <br><br>       
+                        <input id="radio1" name="gender" type="radio" value="Male"/>
+                        <label for="male">Male</label>
+                        <br>        
+                        <input id="radio2" name="gender" type="radio" value="Female"/>
+                        <label for="female">Female</label>
+                        <br><br>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+                <br>
+                <!--JS output-->
+                <p>
+                    <h5 id="yourBirthday"></h5>
+                    <h5 id="yourGender"></h5>
+                    <h5 id="yourAkan"></h5>            
+                </p>
+            </div>            
+        </div>
+    </div>        
+
+    
+    <!--culture section-->
+    <hr class="my-4"> 
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <h2>History</h2>
                 <P>Akan people are believed to have migrated to their current location from the Sahara 
                     desert and Sahel regions of Africa into the forest region around the 11th century. 
@@ -143,89 +161,46 @@
                     trading in the region; throughout this period they were among the most powerful groups in Africa.
                 </P>
                 <br>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-outline-secondary">Learn More</a>
             </div>
-            <div class="col-lg-6">
-                <img src="images/background2.jpg" alt="history" class="img-fluid">
-            </div>
-        </div>
-    </div>
-    <hr class="my-4">
-
-    <!--music section-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <img src="images/background2.jpg" alt="history" class="img-fluid">
-            </div>
-            <div class="col-md-12 col-lg-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <h2>Music</h2>
                 <P>Hiplife is a Ghanaian musical style that fuses Ghanaian culture and hip hop.[1] Recorded predominantly
                      in the Ghanaian Akan language, hiplife is rapidly gaining popularity throughout West Africa and abroad,
                       especially in the United Kingdom, United States, Canada and Germany.
                 </P>
                 <br>
-                <a href="#" class="btn btn-primary">Learn More</a>
-            </div>            
-        </div>
-    </div>
-    <hr class="my-4">
-
-    <!--art section-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-12 col-lg-6">
+                <a href="#" class="btn btn-outline-secondary">Learn More</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <h2>Art</h2>
                 <P>Akan art is known for vibrant artistic traditions, including textiles, sculpture, Akan goldweights, as well as gold and silver jewelry. 
                     Akan culture values gold above all other metals, so the artwork and jewelry made of gold reflects a great deal of value, whether it be 
                     made for appearance, artistic expression, or more practical trading purposes.
                 </P>
                 <br>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-outline-secondary">Learn More</a>
             </div>
-            <div class="col-lg-6">
-                <img src="images/background2.jpg" alt="history" class="img-fluid">
-            </div>
-        </div>
-    </div>
-    <hr class="my-4">
-
-    <!--language section-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <img src="images/background2.jpg" alt="history" class="img-fluid">
-            </div>
-            <div class="col-md-12 col-lg-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <h2>Language</h2>
                 <P>Akan is a Central Tano language and the principal native language of the Akan people of Ghana, spoken over much of the southern half of 
                     Ghana by 80% of the population. Three dialects have been developed as literary standards with distinct orthographies: Fante, Asante, and Akuapem.
                 </P>
                 <br>
-                <a href="#" class="btn btn-primary">Learn More</a>
-            </div>            
-        </div>
-    </div>
-    <hr class="my-4">
-
-    <!--mythology section-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-12 col-lg-6">
+                <a href="#" class="btn btn-outline-secondary">Learn More</a>
+            </div> 
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <h2>Mythology</h2>
                 <P>Some of Akan's most important mythological stories are called anansesem, literally meaning "the spider story", but in a figurative sense also
                      meaning "traveller's tales". These "spider stories" are sometimes also referred to as nyankomsem: "words of a sky god". The stories generally, 
                      but not always, revolve around Kwaku Ananse, a trickster spirit, often depicted as a spider, human, or a combination thereof.
                 </P>
                 <br>
-                <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-            <div class="col-lg-6">
-                <img src="images/background2.jpg" alt="history" class="img-fluid">
-            </div>
+                <a href="#" class="btn btn-outline-secondary">Learn More</a>
+            </div> 
         </div>
     </div>
-    <hr class="my-4">
+    <hr class="my-4">    
 
     <!--notable figures-->
     <div class="container-fluid padding">
@@ -240,7 +215,7 @@
         <div class="row padding">
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="images/background3.jpg" alt="Kwame Nkurumah">
+                    <img class="card-img-top" src="images/kwame.jpg" alt="Kwame Nkurumah">
                     <div class="card-body">
                         <h4 class="card-title">Kwame Nkurumah</h4>
                         <p class="card-text">First Prime Minister and President of Ghana, having led the Gold Coast to independence.</p>
@@ -250,7 +225,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="images/background2.jpg" alt="Kofi Annan">
+                    <img class="card-img-top" src="images/kofi.jpg" alt="Kofi Annan">
                     <div class="card-body">
                         <h4 class="card-title">Kofi Annan</h4>
                         <p class="card-text">Economist, diplomat, Secretary-General of the United Nations and Nobel laureate.</p>
@@ -260,7 +235,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="images/background1.jpg" alt="Kwadwo Asamoah">
+                    <img class="card-img-top" src="images/kwadwo.jpg" alt="Kwadwo Asamoah">
                     <div class="card-body">
                         <h4 class="card-title">Kwadwo Asamoah</h4>
                         <p class="card-text">Ranked as the 27th best footballer in the world by Bloomberg in 2013.</p>
@@ -270,6 +245,7 @@
             </div>
         </div>
     </div>
+    <hr class="my-4"> 
 
     <!--social media-->
     <div class="container-fluid padding">
