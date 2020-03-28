@@ -26,7 +26,8 @@ function validate(){
         return false;
     }
     else if(parseInt(bday.trim().charAt(0))>=0 === false || parseInt(bday.trim().charAt(1))>=0 === false
-    || parseInt(bday.trim().charAt(3))>=0 === false || parseInt(bday.trim().charAt(4))>=0 === false){
+    || parseInt(bday.trim().charAt(3))>=0 === false || parseInt(bday.trim().charAt(4))>=0 === false 
+    || bday.trim().charAt(2)!=="-" || bday.trim().charAt(5)!=="-"){
         birthday.style.border="solid 1px red";
         document.getElementById("invalidBday").style.visibility="visible";
         document.getElementById("invalidRadio").style.visibility="hidden";
