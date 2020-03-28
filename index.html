@@ -50,10 +50,11 @@
             </div>
             <div class="col-md-1 col-sm-0"></div>
             <div class="col-md-6 col-sm-12">
-                <form id="myform" onsubmit="return validate();" action="#"> <!--change action-->
+                <form id="myform" onsubmit="return validate();" action="#jsOutput"> 
                     <div class="form-group">
                         <label for="DOB">Enter your birthday</label>
                         <input id="birthday" class="form-control" placeholder="dd-mm-yyyy" type="text"/>
+                        <span id="invalidBday">*Invalid birthday: Expected dd-mm-yyyy (1901-2020)</span>
                         <br>
                         Click on your gender 
                         <br><br>       
@@ -62,8 +63,10 @@
                         <br>        
                         <input id="radio2" name="gender" type="radio" value="Female"/>
                         <label for="female">Female</label>
+                        <br>
+                        <span id="invalidRadio">*Gender input missing</span>
                         <br><br>
-                        <button class="btn btn-primary" type="submit"><a href="#jsOutput"></a>Know Your Name</a></button>
+                        <button class="btn btn-primary" type="submit">Know Your Name</button>
                     </div>
                 </form>
                 <br>
@@ -71,7 +74,7 @@
                 <p>
                     <h5 id="yourBirthday"><a name="jsOutput"></a></h5>
                     <h5 id="yourGender"></h5>
-                    <h5 id="yourAkan"></h5><br>
+                    <h5 id="yourAkan"></h5>
                     <h1 class="display-4" id="yourAkanNAME"></h1>            
                 </p>
             </div>            

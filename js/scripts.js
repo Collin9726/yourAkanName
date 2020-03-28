@@ -20,51 +20,81 @@ function validate(){
     }
     
     if (bday.trim().length!==10){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
     else if(parseInt(bday.trim().charAt(0))>=0 === false || parseInt(bday.trim().charAt(1))>=0 === false
     || parseInt(bday.trim().charAt(3))>=0 === false || parseInt(bday.trim().charAt(4))>=0 === false){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
     else if(dd>31 || dd<=0 || mm> 12 || mm<=0 || yyyy<=1900 || yyyy>2020){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }    
     else if (yyyy%4===0 && mm===02 && dd>29){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
     else if(yyyy%4!==0 && mm===02 && dd>28) {
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
     else if(mm<=7 && mm%2===0 && dd>30){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
     else if(mm<=7 && mm%2!==0 && dd>31){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
     else if(mm>7 && mm%2===0 && dd>31){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
     else if(mm>7 && mm%2!==0 && dd>30){
+        birthday.style.border="solid 1px red";
+        document.getElementById("invalidBday").style.visibility="visible";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         return false;
     }
+    else{
+        birthday.style.border="solid 0px";
+        document.getElementById("invalidBday").style.visibility="hidden";
+    }
 
-    if (radio1.checked===true){
-        //alert("Male chosen");
-        //alert(bday); 
-        gender="Male";       
+    if (radio1.checked===true){        
+        gender="Male"; 
+        document.getElementById("invalidRadio").style.visibility="hidden";      
         document.getElementById("myform").reset();
         dayWeek();
         return true;
     }
-    else if (radio2.checked===true){
-        //alert("Female chosen");
+    else if (radio2.checked===true){        
         gender="Female";
+        document.getElementById("invalidRadio").style.visibility="hidden";
         document.getElementById("myform").reset();
         dayWeek();
         return true;
     }
     else{
-        alert("Gender input missing");
+        document.getElementById("invalidRadio").style.visibility="visible";
         return false;
     }    
 }
