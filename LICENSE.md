@@ -2,7 +2,7 @@ The Star And Thank Author License (SATA)
 
 Copyright © 2020 Collin Owino info@culturecollin.com
 
-Project Url: https://collin9726.github.io/MyPortfolio/
+Project Url: https://collin9726.github.io/yourAkanName/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -6,7 +6,7 @@ yourAkanName is a website that lets you know your "day name" based on the Akan C
 
 yourAkanName also provides an insight into the broader Akan Culture. It tells you of its mythology, art, music and history. Through given social media pages, you can follow and connect with Akan Culture online. Get to use the web app to know your Akan name and alongside see popular figures with whom you potentially share a name. 
 ## Setup/Run Requirements
-* Visit the website at https://collin9726.github.io/MyPortfolio/ on the latest version of your browser.
+* Visit the website at https://collin9726.github.io/yourAkanName/ on the latest version of your browser.
 * To run yourAkanName, fill in your birthday and select the gender you identify with then click `Know Your Name`. 
 * Both fields must be filled. 
 * A valid date is that which takes the format `dd-mm-yyyy` and that is between 1901-2020.
