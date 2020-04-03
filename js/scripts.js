@@ -100,7 +100,7 @@ function validate(){
     }    
 }
 
-function dayWeek(){ 
+function dayWeek(){     
     var CC=parseInt(yyyy.toString().slice(0,2));
     var YY=parseInt(yyyy.toString().slice(2,4));
     var MM=parseInt(mm);
@@ -138,4 +138,5 @@ function dayWeek(){
     document.getElementById("yourGender").innerHTML="You identify as "+gender.toUpperCase()+".";
     document.getElementById("yourAkan").innerHTML="Your Akan name:";
     document.getElementById("yourAkanNAME").innerHTML=akanName.toUpperCase();
+    event.preventDefault();
 }

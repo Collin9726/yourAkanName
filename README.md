@@ -12,8 +12,6 @@ yourAkanName also provides an insight into the broader Akan Culture. It tells yo
 * A valid date is that which takes the format `dd-mm-yyyy` and that is between 1901-2020.
 * Your Akan Name will appear below the form.
 ## Known Bugs
-The first time you run the application it might show your Akan name and quickly refresh or redirect. Subsequent runs should be seamless and without bugs.
-
 On smaller viewports, you might have to scroll up to view your Akan name once you click on the `Know Your Name` button. The website does not automatically scroll to the results section.
 ## Technologies Used
 yourAkanName has been developed with JavaScript, Bootstrap, HTML5 and CSS. JavaScript drives the Akan naming functions, Bootstrap makes the website responsive, HTML structures the website and CSS gives it the final aesthetics. Standard syntax and indentation has been used all through in accordance with coding best practices. Additional fonts have been imported from fontawesome. Version control has been made thus far through Git. The box model has largely been applied using divs to structure and style the website.
